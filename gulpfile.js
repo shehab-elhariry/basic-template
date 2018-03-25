@@ -44,6 +44,13 @@ gulp.task('html', function () {
     .pipe(connect.reload())
 });
 
+const imagemin = require('gulp-imagemin');
+gulp.task('compress-img', () =>
+  gulp.src('assets/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('assets/img'))
+);
+
 
 var connect = require('gulp-connect');
 
@@ -56,4 +63,4 @@ gulp.task('connect', function() {
 
 gulp.task('sass--watch', ['html', 'sass', 'connect', 'watch']);
 
-gulp.task('production', ['html', 'js', 'sass']);
+gulp.task('production', ['html', 'js', 'sass', 'compress-img']);
