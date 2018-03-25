@@ -44,6 +44,13 @@ gulp.task('html', function () {
     .pipe(connect.reload())
 });
 
+const imagemin = require('gulp-imagemin');
+gulp.task('compressImg', () =>
+  gulp.src('assets/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('assets/img/test'))
+);
+
 
 var connect = require('gulp-connect');
 

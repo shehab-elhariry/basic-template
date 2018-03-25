@@ -13,7 +13,8 @@
     "gulp-uglify": "latest",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
-    "gulp-rename": "latest"
+    "gulp-rename": "latest",
+    "gulp-imagemin" : "latest"
   },
   "author": "",
   "license": "ISC"
