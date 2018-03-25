@@ -45,10 +45,10 @@ gulp.task('html', function () {
 });
 
 const imagemin = require('gulp-imagemin');
-gulp.task('compressImg', () =>
+gulp.task('compress-img', () =>
   gulp.src('assets/img/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/img/test'))
+    .pipe(gulp.dest('assets/img'))
 );
 
 
@@ -63,4 +63,4 @@ gulp.task('connect', function() {
 
 gulp.task('sass--watch', ['html', 'sass', 'connect', 'watch']);
 
-gulp.task('production', ['html', 'js', 'sass']);
+gulp.task('production', ['html', 'js', 'sass', 'compress-img']);
