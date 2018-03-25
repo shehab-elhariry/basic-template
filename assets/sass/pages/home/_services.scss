@@ -1,0 +1,133 @@
+.services {
+  text-align: center;
+  min-height: 100vh;
+  @include box-sizing(border-box);
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  @media all and (max-width: 1024px) {
+    height: auto;
+  }
+  .content-container {
+    padding: 50px 0px;
+  }
+}
+
+.services__title {
+  @extend .section__title;
+  color: $badr-blue;
+}
+
+.service__container {
+  font-size: 0px;
+  text-align: left;
+  margin-bottom: 60px;
+  @media all and (max-width: 1024px) {
+    margin-bottom: 20px;
+  }
+}
+
+.services__item {
+  position: relative;
+  font-size: 0px;
+  width: 50%;
+  padding: 40px;
+  @include box-sizing(border-box);
+  display: inline-block;
+  vertical-align: middle;
+  .services__item__pic {
+    position: relative;
+    z-index: 10;
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    transform:translateY(0px);;
+  }
+  .services__item__text {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+    p {
+      font-size: 16px;
+      text-align: left;
+      line-height: 24px;
+      font-weight: 300;
+    }
+    h3 {
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+  &:nth-child(2n){
+    top: 100px;
+  }
+  @media all and (max-width: 1024px) {
+    width: 100%;
+    padding: 10px;
+    &:nth-child(2n){
+      top: 0px;
+    }
+    .services__item__text {
+      width: 100%;
+      text-align: center;
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+    }
+    .overlay {
+      display: none;
+    }
+    .services__item__pic {
+      transform: rotateY(0) !important;
+      width: 100%;
+      max-width: 200px;
+      display: none;
+    }
+  }
+}
+
+
+
+.services__item__text__link {
+  font-size: 14px;
+  color: $badr-blue !important;
+  float: right;
+  @media all and (max-width: 1024px) {
+    float: none;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.services__item__pic.mobile-only {
+  display: none;
+  @media all and (max-width: 1024px) {
+    display: inline-block;
+  }
+}
+
+.services__item {
+  .overlay {
+    z-index: 2;
+    border: 2px solid #95d6ff;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    @media all and (min-width: 1024px) and (max-width: 1300px)   {
+      height: 100px;
+    }
+  }
+}
+
+.services__cta {
+  @extend .use-cases__cta;
+  margin: 50px 0px !important;
+  z-index: 10;
+  position: relative;
+}

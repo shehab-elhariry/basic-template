@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2018-2-20: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20160405 at Tue Feb 20 13:21:52 2018
+ By Apache
+Copyright (c) 2018, Apache
+</metadata>
+<defs>
+<font id="Flaticon" horiz-adv-x="512" >
+  <font-face 
+    font-family="Flaticon"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0.129883 -64.0008 511.854 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F102"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
+ />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" 
+d="M18.2207 173.779c-10.0791 0 -18.0908 8.27148 -18.0908 18.3506s8.01172 18.0908 18.0908 18.0908h219.412v219.429c0.0166016 10.0791 8.28809 18.3506 18.3672 18.3506s18.0898 -8.27148 18.0898 -18.3506v-219.429h219.413
+c10.0791 0 18.3506 -8.01172 18.3506 -18.0908s-8.27148 -18.3506 -18.3506 -18.3506h-219.413v-219.429c0 -10.0791 -8.01074 -18.3506 -18.0898 -18.3506s-18.3506 8.27148 -18.3506 18.3506v219.429h-219.429z" />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" 
+d="M148.424 192.061l237.927 -238.034c3.9502 -4.16309 3.9502 -10.6738 0 -14.8369c-4.05566 -4.16309 -10.7803 -4.26953 -15.0498 -0.212891l-245.506 245.506c-4.16309 4.16309 -4.16309 10.8877 0 15.0508l245.506 245.505c4.16211 3.94922 10.6738 3.94922 14.8369 0
+c4.16309 -4.05566 4.26953 -10.7803 0.212891 -15.0508z" />
+    <glyph glyph-name="uniF102" unicode="&#xf102;" 
+d="M386.273 199.667c4.16016 -4.16016 4.16016 -10.8809 0 -15.042l-245.357 -245.357l-0.212891 -0.212891c-4.16016 -4.16113 -10.9883 -4.05469 -15.042 0.212891c-4.16016 4.16016 -4.05371 10.9883 0.213867 15.041l237.783 237.891l-237.783 237.784
+c-3.94824 4.16016 -3.94824 10.668 0 14.8281c4.05273 4.16016 10.7734 4.2666 15.041 0.212891z" />
+  </font>
+</defs></svg>

@@ -1,0 +1,106 @@
+.bottom-footer {
+  text-align: center;
+  padding: 30px 0px;
+  background-color: #333333;
+  @include box-sizing(border-box);
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  @media all and (max-width: 768px) {
+    height: auto;
+  }
+  .content-container {
+    text-align: left;
+    font-size: 0px;
+  }
+}
+
+.bottom-footer__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  width: ((100% - $footer-item-addres-width) / ($footer-items-numbers - 1));
+  @include box-sizing(border-box);
+  h4{
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: $font-text-normal * 1.2;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 5px;
+    a {
+      color: white;
+      font-size: $font-text-normal;
+      line-height: ($font-text-normal * 1.8)
+    }
+    &:before {
+      content: '\f22d';
+      font-family: 'FontAwesome';
+      color: white;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+
+.bottom-footer__item--address{
+  width: $footer-item-addres-width;
+  .bottom-footer__item--address__pic {
+    display: inline-block;
+  }
+  .bottom-footer__item--address__catch-phrase {
+    color: #747474;
+    font-size: $font-text-normal;
+    line-height: $font-text-normal * 1.8;
+  }
+  @media all and (max-width: 768px) {
+    width: 100%; 
+  }
+}
+
+
+.bottom-footer__item--address__contact {
+  background-image: url(../img/world-map.png);
+  background-repeat: no-repeat;
+}
+
+.bottom-footer__item--address__contact__headquarters {
+  margin-bottom: 20px;
+  h4 {
+    font-size: $font-text-normal;
+  }
+  .bottom-footer__item--address__contact__headquarters__item {
+    color: white;
+    font-size: $font-text-normal;
+  }
+}
+
+.bottom-footer__item--address__contact__info {
+  > div {
+    margin-bottom: 5px;
+  }
+  span {
+    font-size: $font-text-normal;
+    color: white;
+    padding-left: 20px;
+  }
+  .title {
+    font-size: $font-text-normal;
+    color: white;
+    display: inline-block;
+    width: 40px;
+    border-bottom: 1px solid white;
+    border-bottom-style: dotted;
+    padding-left: 0px;
+  }
+
+}

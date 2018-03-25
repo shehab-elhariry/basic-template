@@ -1,0 +1,29 @@
+body {
+  font-family: $main-font , sans-serif;
+}
+
+a {
+  color: #343434;
+  text-decoration: none;
+  &:visited {
+    color: #343434;
+  }
+}
+
+.content-container {
+  width: 80%;
+  display: inline-block;
+}
+
+
+.section__title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: $title-font , sans-serif;
+  color: black;
+  display: block;
+  color: white;
+  @media all and (max-width: 1024px) {
+    font-size: 30px;
+  }
+}
