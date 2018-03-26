@@ -13,7 +13,7 @@ gulp.task('log', function() {
 });
 
 gulp.task('sass', function() {
-  gulp.src('assets/ass/app.scss')
+  gulp.src('assets/sass/app.scss')
   .pipe(sass({style: 'expanded'}))
     .on('error', gutil.log)
   .pipe(rename('styles.css'))
@@ -27,7 +27,7 @@ var uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
 
 gulp.task('js', function() {
-  gulp.src('assets/js/*.js')
+  gulp.src('assets/js/src/*.js')
   .pipe(uglify())
   .pipe(concat('scripts-dir.js'))
   .pipe(gulp.dest('js'))
