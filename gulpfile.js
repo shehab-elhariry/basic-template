@@ -13,7 +13,7 @@ gulp.task('log', function() {
 });
 
 gulp.task('sass', function() {
-  gulp.src('assets/ass/app.scss')
+  gulp.src('assets/sass/app.scss')
   .pipe(sass({style: 'expanded'}))
     .on('error', gutil.log)
   .pipe(rename('styles.css'))
@@ -27,7 +27,7 @@ var uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
 
 gulp.task('js', function() {
-  gulp.src('assets/js/*.js')
+  gulp.src('assets/js/src/*.js')
   .pipe(uglify())
   .pipe(concat('scripts-dir.js'))
   .pipe(gulp.dest('js'))
@@ -35,8 +35,9 @@ gulp.task('js', function() {
 
 gulp.task('watch', function() {
   gulp.watch('assets/js/*.js', ['js']);
-  gulp.watch('assets/ass/**/*.scss', ['sass']);
-  gulp.watch('index.html', ['html']);
+  gulp.watch('assets/**/*.scss', ['sass']);
+  gulp.watch('./*.html', ['html']);
+  gulp.watch('./src/**/*.html', ['htmlpartial']);
 });
 
 gulp.task('html', function () {
@@ -52,6 +53,17 @@ gulp.task('compress-img', () =>
 );
 
 
+const htmlPartial = require('gulp-html-partial');
+
+gulp.task('htmlpartial', function () {
+  console.log('partial enter')
+  gulp.src(['./src/**/*.html'])
+    .pipe(htmlPartial({
+      basePath: './'
+    }))
+    .pipe(gulp.dest('./'));
+});
+
 var connect = require('gulp-connect');
 
 gulp.task('connect', function() {
@@ -61,6 +73,6 @@ gulp.task('connect', function() {
   })
 });
 
-gulp.task('sass--watch', ['html', 'sass', 'connect', 'watch']);
+gulp.task('sass--watch', ['htmlpartial', 'html', 'sass', 'connect', 'watch']);
 
 gulp.task('production', ['html', 'js', 'sass', 'compress-img']);

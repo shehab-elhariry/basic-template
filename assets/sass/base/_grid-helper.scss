@@ -1,0 +1,45 @@
+// elements alignments
+.u-container {
+    font-size: 0px;
+    text-align: center
+}
+
+//width for sections in a page u-w-10 = 10% and so on. 
+
+.u-w {
+    display: inline-block;
+}
+
+
+@for $i from 1 through 10 {
+    .u-w-#{$i * 10} {
+        @extend .u-w;
+        width: $i * 10%;
+    }
+}
+
+
+// alignment
+.u-no-padding {
+    padding: 0px;
+}
+
+.u-padding-basic-vert {
+    padding: 20px 0px;
+}
+
+.u-padding-basic-horiz {
+    padding: 0px 20px;
+}
+
+.u-padding-basic-left {
+    padding-left: 20px;
+}
+
+.u-padding-basic-right {
+    padding-right: 20px;
+}
+
+
+
+

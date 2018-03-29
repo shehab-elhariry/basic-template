@@ -15,7 +15,7 @@
 
 .services__title {
   @extend .section__title;
-  color: $badr-blue;
+  // color: $badr-blue;
 }
 
 .service__container {
@@ -95,7 +95,7 @@
 
 .services__item__text__link {
   font-size: 14px;
-  color: $badr-blue !important;
+  // color: $badr-blue !important;
   float: right;
   @media all and (max-width: 1024px) {
     float: none;

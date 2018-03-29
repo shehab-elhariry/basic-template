@@ -8,13 +8,14 @@
   },
   "devDependencies": {
     "gulp": "latest",
-    "gulp-util": "latest",
-    "gulp-sass": "latest",
-    "gulp-uglify": "latest",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-imagemin": "latest",
     "gulp-rename": "latest",
-    "gulp-imagemin" : "latest"
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest"
   },
   "author": "",
   "license": "ISC"
