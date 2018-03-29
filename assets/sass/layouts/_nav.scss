@@ -2,133 +2,16 @@
 /*=========== Top Navigation ==========*/
 /*=====================================*/
 
-.c-top-navigation {
-  width: 100%;
-  text-align: center;
-  font-size: 0px;
-  position: fixed;
-  z-index: 100;
-  @media all and (max-width: 1024px) {
-    @include box-shadow(0px, 2px , 8px, #eaeaea);
-  }
-}
-
-.c-top-navigation__logo,
-.c-top-navigation__list-container,
-.c-top-navigation__cto {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c-top-navigation__logo {
-  width: 15%;
-  img {
-    padding: 30px;
-    box-sizing: border-box;
-    width: 150px;
-  }
-  @media all and (max-width: 1024px) {
-    display: block;
-    width: 100%;
-    background-color: white;
-  }
-}
-
-.c-top-navigation__list-container {
-  width: 40%;
-  @media all and (max-width: 1024px) {
-    display: block;
-    width: 100%;
-    background-color: white;
-  }
-}
-
-.c-top-navigation__list {
+.myNav {
   margin: 0px;
-  padding: 0px;
-  font-size: $font-text-normal;
-  @include flexbox;
-  justify-content: space-around;
-  transition: 0.4s opacity ease;
-  @media all and (max-width: 1024px) {
-    opacity: 0;
-    position: absolute;
-    visibility: hidden;
-    padding-bottom: 20px;
-  }
-}
-
-.c-top-navigation__list__item {
-  list-style: none;
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 1px;
-    &:hover,
-    &:focus {
-      // color: $badr-blue;
-    }
-  }
-  @media all and (max-width: 1024px) {
-    display: block;
+  padding: 20px 0px;
+  background-color: $navbar-color; 
+  li {
+    display: inline-block;
+    list-style: none;
+    width: 33%;
     a {
-      margin: 15px 0px;
-      display: block;
-      &:first-child {
-        margin-top: 0px;
-      }
+      color: white;
     }
   }
-}
-
-.c-top-navigation__cto {
-  width: 25%;
-  a {
-    font-weight: bold;
-    line-height: 22px;
-    letter-spacing: 1px;
-    text-align: center;
-    font-size: $font-text-normal;
-    color: white;
-  }
-  @media all and (max-width: 1024px) {
-    display: none;
-  }
-}
-
-.c-top-navigation__list.active  {
-  opacity: 1;
-  display: block !important;
-  position: static;
-  visibility: visible;
-}
-
-
-.navigation-toggle {
-  display: none;
-  @media all and (max-width: 1024px) {
-    display: block;
-    font-size: 25px;
-    position: absolute;
-    top: 38px;
-    left: 30px;
-  }
-}
-
-.headroom {
-    will-change: transform;
-    transition: transform 200ms linear;
-}
-.headroom--pinned {
-    transform: translateY(0%);
-    background: transparent;
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
-
-.headroom {
-  background-color: white;
 }
